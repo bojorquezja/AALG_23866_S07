@@ -21,8 +21,8 @@ for d in denominaciones:
 
     if cantidad > 0:
 
-        restante = restante - (cantidad * d)
-        restante = round(restante, 2)
+        restante = restante + 0.000000001 - (cantidad * d)
+        #restante = round(restante, 2)
 
         print(f"S/{d:<13}{cantidad:<12}{restante}")
 
